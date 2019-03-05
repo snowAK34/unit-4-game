@@ -62,12 +62,14 @@ function gameEnd() {
         wins++;
         gameStart();
         updateStats();
+        $("h2").text("You won!");
     }
     // if score > target, player loses & game restarts
     if (score > target) {
         losses--;
         gameStart();
         updateStats();
+        $("h2").text("You lost!");
     }
 };
 

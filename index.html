@@ -11,46 +11,49 @@
 </head>
 
 <body>
-    <div class="container">
+    <div class="container-fluid">
         <div id="headline" class="row">
             <h1>Gem Collector</h1>
         </div>
         <div class="row">
-            <div id="instructions" class="col col-lg-8">
+            <div id="instructions" class="col col-lg-8 d-flex flex-wrap justify-content-center">
                 <p>Each gem has been given a different value.  Try to match the target number by clicking on the gems to increase your score.</p>
                 <p>Don't go over the target number, or you'll lose!  When the game resets, the gems will be given a new value.</p>
             </div>
         </div>
         <div id="numbers" class="row">            
-            <div id="target-box" class="col col-lg-4">
+            <div id="target-box" class="col col-lg-4 d-flex justify-content-center">
                 <p>Target: <span id="target">0</span></p>
             </div>
-            <div id="score-box" class="col col-lg-4">
+            <div id="score-box" class="col col-lg-4 d-flex justify-content-center">
                 <p>Score: <span id="score">0</span></p>
             </div>
         </div>
-        <div id="gems" class="row">
-            <div id="green" class="col col-lg-2">
+        <div id="gems" class="row d-flex justify-content-center">
+            <div id="green" class="col col-lg-2 col-md-5 col-sm-12">
                 <img src="assets/images/green_gem.png" alt="green gem">
             </div>
-            <div id="red" class="col col-lg-2">
+            <div id="red" class="col col-lg-2 col-md-5 col-sm-12">
                 <img src="assets/images/red_gem.png" alt="red gem">
             </div>
-            <div id="orange" class="col col-lg-2">
+            <div id="orange" class="col col-lg-2 col-md-5 col-sm-12">
                 <img src="assets/images/blue_gem.png" alt="orange gem">
             </div>
-            <div id="blue" class="col col-lg-2">
+            <div id="blue" class="col col-lg-2 col-md-5 col-sm-12">
                 <img src="assets/images/orange_gem.png" alt="blue gem">
             </div>
         </div>
-        <div class="row">
-            <div id="winloss" class="col col-lg-4">
+        <div class="row d-flex justify-content-center">
+            <div id="winloss" class="col col-lg-4 d-flex flex-column">
                 <p>Wins: <span id="wins">0</span></p>
                 <p>Losses: <span id="losses">0</span></p>
             </div>
+            <div id="end-message" class="col col-lg-4">
+                    <h2></h2>
+            </div>
         </div>
-        <div id="footer" class="row">
-
+        <div id="page-base" class="row">
+            <p></p>
         </div>
     </div>
     <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js"></script>

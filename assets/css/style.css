@@ -1,8 +1,82 @@
-* {
+body {
     box-sizing: border-box;
     margin: 0;
+    background-color: #f3d6f9;
 }
 
 #headline {
-    /* background-image: url("../images/crystaltop.jpg"); */
+    width: 100%;
+    margin: 0;
+    background-image: url("../images/crystalbottom_xsm.jpg");
+    color: white;
+}
+
+h1 {
+    margin: 0 auto;
+    padding: 10px;
+    text-shadow: -1px 0 #5b098e, 0 1px #5b098e, 1px 0 #5b098e, 0 -1px #5b098e;
+}
+
+#instructions {
+    margin: 10px auto;
+    border: solid thin darkgrey;
+    border-radius: 25px;
+    background-color: white;
+    padding: 10px;
+    color: #5b098e;
+}
+
+#numbers {
+    margin: 0 auto;
+}
+
+#target-box {
+    margin-right: 0;
+    margin-left: auto;
+    padding: 5px;
+    color: #5b098e;
+}
+
+#score-box {
+    margin-left: 0;
+    margin-right: auto;
+    padding: 5px;
+    color: #5b098e;
+}
+
+#gems {
+    object-fit: contain;
+}
+
+#green, #red, #blue, #orange {
+    height: 200px;
+    width: 200px;
+    border: double medium darkgrey;
+    background-color: white;
+    background-color: white;
+    padding: 0;
+    margin: 5px;
+    box-shadow:  -3px 0 darkgrey, 0 3px darkgrey, 3px 0 darkgrey, 0 -3px darkgrey;
+}
+
+#green:active, #red:active, #blue:active, #orange:active {
+    box-shadow: -1px 0 darkgrey, 0 1px darkgrey, 1px 0 darkgrey, 0 -1px darkgrey;
+}
+
+#winloss {
+    padding: 10px;
+    color: #5b098e;
+}
+
+#end-message {
+    padding: 10px;
+    color: #5b098e;
+}
+
+#page-base {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+    background-image: url("../images/crystaltop_sm.jpg");
 }
