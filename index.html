@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <title>Gem Collector!</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+</head>
+
+<body>
+    <div class="container">
+        <div id="headline" class="row">
+            <h1>Gem Collector</h1>
+        </div>
+        <div class="row">
+            <div id="instructions" class="col col-lg-8">
+                <p>Each gem has been given a different value.  Try to match the target number by clicking on the gems to increase your score.</p>
+                <p>Don't go over the target number, or you'll lose!  When the game resets, the gems will be given a new value.</p>
+            </div>
+        </div>
+        <div id="numbers" class="row">            
+            <div id="target-box" class="col col-lg-4">
+                <p>Target: <span id="target">0</span></p>
+            </div>
+            <div id="score-box" class="col col-lg-4">
+                <p>Score: <span id="score">0</span></p>
+            </div>
+        </div>
+        <div id="gems" class="row">
+            <div id="green" class="col col-lg-2">
+                <img src="assets/images/green_gem.png" alt="green gem">
+            </div>
+            <div id="red" class="col col-lg-2">
+                <img src="assets/images/red_gem.png" alt="red gem">
+            </div>
+            <div id="orange" class="col col-lg-2">
+                <img src="assets/images/blue_gem.png" alt="orange gem">
+            </div>
+            <div id="blue" class="col col-lg-2">
+                <img src="assets/images/orange_gem.png" alt="blue gem">
+            </div>
+        </div>
+        <div class="row">
+            <div id="winloss" class="col col-lg-4">
+                <p>Wins: <span id="wins">0</span></p>
+                <p>Losses: <span id="losses">0</span></p>
+            </div>
+        </div>
+        <div id="footer" class="row">
+
+        </div>
+    </div>
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js"></script>
+    <script src="assets/javascript/game.js"></script>
+</body>
+</html>
